@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #8B2CFF;
+    --color-accent: #A855F7;
+    --color-deep: #5B21B6;
+    --color-dark: #0B0714;
+    --color-dark-surface: #151020;
+    --color-card: #1C142B;
+    --color-text-secondary: #C4B5D9;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0B0714;
+    color: #FFFFFF;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0714;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D1B4E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B2CFF;
+}
+
+/* Background atmospheric glow */
+.purple-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(139, 44, 255, 0.15) 0%, rgba(11, 7, 20, 0) 70%);
+}
+
+.purple-glow-sm {
+  background: radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.12) 0%, rgba(11, 7, 20, 0) 60%);
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #A855F7;
+  outline-offset: 2px;
+}
